@@ -2,6 +2,8 @@ FROM fluxcapacitor/utils-ubuntu-14.04
 
 ENV KUBERNETES_RELEASE=v1.3.6
 
+WORKDIR /root
+
 RUN \
   wget https://storage.googleapis.com/kubernetes-release/release/$KUBERNETES_RELEASE/kubernetes.tar.gz 
 
