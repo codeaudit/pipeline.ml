@@ -20,7 +20,10 @@ RUN \
 
 RUN \
   wget -O gofabric8 https://github.com/fabric8io/gofabric8/releases/download/v$FABRIC8_VERSION/gofabric8-$FABRIC8_OS-amd64 \ 
-  && chmod a+x gofabric8
+
+RUN \
+  sudo cp gofabric8 /usr/local/bin/gofabric8 \
+  && sudo chmod a+x /usr/local/bin/gofabric8
 
 COPY run run
 
