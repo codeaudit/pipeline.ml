@@ -19,7 +19,7 @@ RUN \
   && sudo chmod a+x /usr/local/bin/kubectl
 
 RUN \
-  wget -O gofabric8 https://github.com/fabric8io/gofabric8/releases/download/v$FABRIC8_VERSION/gofabric8-$FABRIC8_OS-amd64 \ 
+  wget -O gofabric8 https://github.com/fabric8io/gofabric8/releases/download/v$FABRIC8_VERSION/gofabric8-$FABRIC8_OS-amd64 
 
 RUN \
   sudo cp gofabric8 /usr/local/bin/gofabric8 \
