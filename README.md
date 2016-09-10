@@ -1,6 +1,7 @@
 ## Prequisites
+* None
 
-## Start Docker Container
+## Start Docker Container with [Kubernetes](http://kubernetes.io) and [Fabric8](fabric8.io) Installed
 ```
 docker run -itd --name=pipeline-manager --privileged --net=host -e KUBERNETES_SERVER=<kubernetes-server> -e KUBERNETES_USERNAME=<kubernetes-username> -e KUBERNETES_PASSWORD=<kubernetes-password> fluxcapacitor/pipeline-manager
 ```
@@ -25,6 +26,11 @@ Heapster is running at https://.../api/v1/proxy/namespaces/kube-system/services/
 KubeDNS is running at https://.../api/v1/proxy/namespaces/kube-system/services/kube-dns
 kubernetes-dashboard is running at https://.../api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
 ...
+```
+
+## Navigate to the Fabric8 Console
+```
+https://<kubernetes-server>/api/v1/proxy/namespaces/default/services/fabric8
 ```
 
 ## Shell into the Docker Container 
