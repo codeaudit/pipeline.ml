@@ -8,25 +8,28 @@ docker run -itd --name=pipeline-manager --privileged --net=host -e KUBERNETES_SE
 ## Verify Successful Start through Logs
 ```
 docker logs -f pipeline-manager
-```
-## Verify Successful Start through Kafka REST API
-```
-# TODO:  curl http://localhost:8082/topics
 
-*** EXPECTED OUTPUT ***
-# TODO:  
+### EXPECTED OUTPUT ###
+...
+user "demo" set.
+cluster "demo" set.
+context "demo" set.
+switched to context "demo".
+NAME              STATUS    AGE
+gke-cluster-...   Ready     1m
+gke-cluster-...   Ready     1m
+gke-cluster-...   Ready     1m
+Kubernetes master is running at https://...
+GLBCDefaultBackend is running at https://.../api/v1/proxy/namespaces/kube-system/services/default-http-backend
+Heapster is running at https://.../api/v1/proxy/namespaces/kube-system/services/heapster
+KubeDNS is running at https://.../api/v1/proxy/namespaces/kube-system/services/kube-dns
+kubernetes-dashboard is running at https://.../api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
+...
 ```
-## (Optional) Verify Successful through Kafka Directly
-* Bash into the Docker Container 
+
+## Shell into the Docker Container 
 ```
 docker exec -it pipeline-manager bash
-```
-* From within the Docker Container
-```
-# TODO:  root@docker# confluent-3.0.0/bin/kafka-topics --zookeeper localhost:2181 --list
-
-*** EXPECTED OUTPUT ***
-# TODO:  
 ```
 
 ## (Optional) Build new Docker Image
