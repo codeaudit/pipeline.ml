@@ -15,10 +15,13 @@ RUN \
   && rm kubernetes.tar.gz
 
 RUN \
+  sudo cp $KUBERNETES_HOME/platforms/linux/amd64/kubectl /usr/local/bin/kubectl \
+  && sudo chmod a+x /usr/local/bin/kubectl
+
+RUN \
   wget -O gofabric8 https://github.com/fabric8io/gofabric8/releases/download/v$FABRIC8_VERSION/gofabric8-$FABRIC8_OS-amd64 \ 
   && chmod a+x gofabric8
 
 COPY run run
 
 CMD ["./run"]
-
