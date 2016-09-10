@@ -1,9 +1,11 @@
 Based on [this](https://blog.fabric8.io/fabric8-on-google-container-engine-cbb1bdc9f6f4#.4b1koxa83) video and [this](http://fabric8.io/guide/getStarted/gke.html) documentation.
 
 ## Prequisites
-* 
+* Create a Google Container (GKE) Cluster
 
-![Google Container Cluster Create]()
+![Google Container Cluster Create](http://advancedspark.com/img/gke-create-cluster.png)
+
+![Google Container Cluster Create Options](http://advancedspark.com/img/gke-create-cluster-options.png)
 
 ## Start Docker Container with [Kubernetes](http://kubernetes.io) and [Fabric8](fabric8.io) Installed
 ```
@@ -49,7 +51,9 @@ https://<kubernetes-server>/api/v1/proxy/namespaces/default/services/fabric8
 ```
 _If you are having problems seeing the fabric8 console, you may be exceeding your Google Platform Quotas._
 
-_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas_
+_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas_  
+
+![Google Container Cluster Create Options](http://advancedspark.com/img/gke-exceed-quotas.png)
 
 ## Shell into the Docker Container 
 ```
