@@ -44,16 +44,29 @@ KubeDNS is running at https://.../api/v1/proxy/namespaces/kube-system/services/k
 kubernetes-dashboard is running at https://.../api/v1/proxy/namespaces/kube-system/services/kubernetes-dashboard
 ...
 ```
-
-## Navigate to the Fabric8 Console
+## Wait for External IPs
 ```
-https://<kubernetes-server>/api/v1/proxy/namespaces/default/services/fabric8
-```
-_If you are having problems seeing the fabric8 console, you may be exceeding your Google Platform Quotas._
+kubectl get svc -w
 
-_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas, create a new account, or request a limit increase_
+### EXPECTED OUTPUT ###
+...
+NAME                      CLUSTER-IP     EXTERNAL-IP       PORT(S)     AGE
+fabric8                   10.3.242.187   a.valid.ip.addr   80/TCP      8m  <-- GOOD (Use this External IP in Next Step)
+...
+nexus                     10.3.242.128   <pending>         80/TCP      8m  <-- NOT GOOD (Possibly Exceeding Quota)
+```
+
+_If you are having problems acquiring external IPs, you may be exceeding your Google Platform Quotas._
+
+_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas, create a new account, or request a limit increase from Google_
 
 ![Google Container Cluster Create Options](http://advancedspark.com/img/gke-exceed-quotas.png)
+
+## Navigate to the Fabric8 Console (External IP from Above)
+* Copy and Paste the External IP from Above (a.valid.ip.addr)
+```
+https://<fabric8-external-ip>/api/v1/proxy/namespaces/default/services/fabric8
+```
 
 ## Shell into the Docker Container 
 ```
