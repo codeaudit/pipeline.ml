@@ -8,4 +8,6 @@ kubectl config use-context demo
 kubectl get nodes
 kubectl cluster-info
 
-./gofabric8 deploy
+./gofabric8 deploy -y
+
+kubectl get pods --watch
