@@ -22,5 +22,5 @@ RUN \
 
 COPY run run
 
-CMD ["./run"]
+#CMD ["./run"]
 
