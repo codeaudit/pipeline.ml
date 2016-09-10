@@ -20,7 +20,7 @@ RUN \
   wget -O gofabric8 https://github.com/fabric8io/gofabric8/releases/download/v$FABRIC8_VERSION/gofabric8-$FABRIC8_OS-amd64 \ 
   && chmod a+x gofabric8
 
-COPY start.sh start.sh
+COPY run run
 
 CMD ["./run"]
 
