@@ -3,6 +3,9 @@ FROM fluxcapacitor/utils-ubuntu-14.04
 ENV KUBERNETES_RELEASE=v1.3.6
 ENV FABRIC8_VERSION=0.4.58
 ENV FABRIC8_OS=linux
+ENV KUBERNETES_HOME=/root/kubernetes/
+ENV PATH=$KUBERNETES_HOME/platforms/linux/amd64:$PATH
+
 
 WORKDIR /root
 
