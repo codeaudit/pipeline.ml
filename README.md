@@ -4,7 +4,7 @@
 ## Start Docker Container with [Kubernetes](http://kubernetes.io) and [Fabric8](fabric8.io) Installed
 * KUBERNETES_SERVER:  Host/IP of Google Container (GKE) Cluster Endpoint
 
-![Google Container Endpoint](http://advancedspark.com/img/gke-cluster-endpoint.png)
+![Google Container Endpoint](http://advancedspark.com/img/gke-cluster-endpoint-ip.png)
 
 * KUBERNETES_USERNAME:  Admin User of Google Container (GKE) Cluster
 * KUBERNETES_PASSWORD:  Admin Password of Google Container (GKE) Cluster
