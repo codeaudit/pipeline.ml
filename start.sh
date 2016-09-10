@@ -9,3 +9,4 @@ kubectl config set-cluster demo --insecure-skip-tls-verify=true --server=https:/
 kubectl config set-context demo --user=demo --namespace=default --cluster=demo
 kubectl config use-context demo
 kubectl get nodes
+kubectl cluster-info
