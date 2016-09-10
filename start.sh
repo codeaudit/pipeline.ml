@@ -7,3 +7,5 @@ kubectl config set-context demo --user=demo --namespace=default --cluster=demo
 kubectl config use-context demo
 kubectl get nodes
 kubectl cluster-info
+
+./gofabric8 deploy
