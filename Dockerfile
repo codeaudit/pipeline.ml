@@ -12,3 +12,4 @@ RUN \
   sudo cp $KUBERNETES_HOME/platforms/linux/amd64/kubectl /usr/local/bin/kubectl \
   && sudo chmod a+x /usr/local/bin/kubectl
 
+CMD ["start.sh"]
