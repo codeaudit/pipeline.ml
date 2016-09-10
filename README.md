@@ -1,3 +1,5 @@
+Based on [this](https://blog.fabric8.io/fabric8-on-google-container-engine-cbb1bdc9f6f4#.4b1koxa83) video and [this](http://fabric8.io/guide/getStarted/gke.html) documentation
+
 ## Prequisites
 * None
 
