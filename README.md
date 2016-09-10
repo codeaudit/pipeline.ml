@@ -51,7 +51,7 @@ https://<kubernetes-server>/api/v1/proxy/namespaces/default/services/fabric8
 ```
 _If you are having problems seeing the fabric8 console, you may be exceeding your Google Platform Quotas._
 
-_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas_  
+_See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas, create a new account, or request a limit increase_
 
 ![Google Container Cluster Create Options](http://advancedspark.com/img/gke-exceed-quotas.png)
 
