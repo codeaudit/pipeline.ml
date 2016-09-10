@@ -65,7 +65,7 @@ _See http://fabric8.io/guide/getStarted/gke.html#google-container-engine-quotas,
 ## Navigate to the Fabric8 Console (External IP from Above)
 * Copy and Paste the External IP from Above (a.valid.ip.addr)
 ```
-https://<fabric8-external-ip>/api/v1/proxy/namespaces/default/services/fabric8
+https://<fabric8-external-ip>
 ```
 
 ## Shell into the Docker Container 
