@@ -2,6 +2,10 @@
 * None
 
 ## Start Docker Container with [Kubernetes](http://kubernetes.io) and [Fabric8](fabric8.io) Installed
+```
+docker run -itd --name=pipeline-manager --privileged --net=host -e KUBERNETES_SERVER=<kubernetes-server> -e KUBERNETES_USERNAME=<kubernetes-username> -e KUBERNETES_PASSWORD=<kubernetes-password> fluxcapacitor/pipeline-manager
+```
+
 * KUBERNETES_SERVER:  Host/IP of Google Container (GKE) Cluster Endpoint
 
 ![Google Container Endpoint](http://advancedspark.com/img/gke-cluster-endpoint-ip.png)
@@ -13,9 +17,6 @@
 
 ![Google Container Username and Password](http://advancedspark.com/img/gke-cluster-username-password.png)
 
-```
-docker run -itd --name=pipeline-manager --privileged --net=host -e KUBERNETES_SERVER=<kubernetes-server> -e KUBERNETES_USERNAME=<kubernetes-username> -e KUBERNETES_PASSWORD=<kubernetes-password> fluxcapacitor/pipeline-manager
-```
 
 ## Verify Successful Start through Logs
 ```
