@@ -19,7 +19,7 @@ docker logs -f pipeline-manager
 ## (Optional) Verify Successful through Kafka Directly
 * Bash into the Docker Container 
 ```
-docker exec -it kafka bash
+docker exec -it pipeline-manager bash
 ```
 * From within the Docker Container
 ```
