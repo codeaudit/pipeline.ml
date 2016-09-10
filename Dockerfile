@@ -1,6 +1,6 @@
 FROM fluxcapacitor/utils-ubuntu-14.04
 
-ENV KUBERNETES_RELEASE=1.3.6
+ENV KUBERNETES_RELEASE=v1.3.6
 ENV KUBERNETES_HOME=/root/kubernetes/
 
 RUN \
